@@ -21,7 +21,7 @@ insert into stadium (id, date, people) values ('8', '2017-01-08', '188');
 
 SELECT A.* FROM STADIUM AS A, STADIUM AS B, STADIUM AS C
 
-WHERE ( (A.ID+1=B.ID AND B.ID+1=C.ID) OR (A.ID-1=B.ID AND A.ID+1=C.ID) OR (B.ID+1=C.ID AND C.ID+1=A.ID) )
+WHERE ( (A.ID+1=B.ID AND A.ID+2=C.ID) OR (A.ID-1=B.ID AND A.ID+1=C.ID) OR (A.ID-2=C.ID AND A.ID-1=B.ID) )
       
       AND A.PEOPLE>=100 AND B.PEOPLE>=100 AND C.PEOPLE>=100 
       

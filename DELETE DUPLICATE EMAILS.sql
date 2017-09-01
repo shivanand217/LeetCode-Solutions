@@ -1,0 +1,12 @@
+# Write your MySQL query statement below
+
+#SELECT ID, DISTINCT EMAIL FROM PERSON 
+#SELECT DISTINCT EMAIL FROM PERSON order BY ID
+#ALTER IGNORE TABLE PERSON ADD UNIQUE (EMAIL)
+
+
+
+DELETE p1
+FROM Person p1, Person p2
+WHERE p1.Email = p2.Email AND
+p1.Id > p2.Id
